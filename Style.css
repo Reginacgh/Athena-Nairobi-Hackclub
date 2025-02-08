@@ -1,0 +1,201 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: powderblue;
+}
+p {
+    color: black;
+
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    color: navy;
+
+}
+a {
+    color: aqua;
+    text-decoration: none;
+
+}
+a.hover {
+    text-decoration: underline;
+
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.header {
+    background-color: powderblue;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+
+}
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.header h1 {
+    font-size: 48px;
+    margin: 20px 0;
+
+}
+.header .subtitle {
+    font-size: 18px;
+    margin: 0;
+
+}
+.header .event-details {
+    font-size: 20px;
+    margin: 20px 0;
+
+}
+.cta-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+
+}
+.about .container {
+    background-color: powderblue;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+
+}
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+
+}
+.about p {
+    font-size: 18px;
+    margin: 0 auto;
+
+}
+.past-events {
+    background-color: powderblue;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+.past-events h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+.event-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.event {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: 300px;
+    text-align: center;
+
+
+}
+.event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+.event p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+
+}
+.workshops {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: powderblue;
+
+}
+.workshops h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+.workshops-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.workshop {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.faq {
+    background-color: powderblue;
+    padding: 50px 20px;
+    text-align: center;
+    color: aliceblue;
+}
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+.faq-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.faq-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+
+}
+.footer {
+    background-color: beige;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
