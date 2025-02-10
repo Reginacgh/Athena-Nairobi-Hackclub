@@ -9,11 +9,27 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.8;
-  color: #a4798c;
+  color: #b46e8d;
   overflow-x: hidden;
+  background: linear-gradient(-45deg, #f4cd8c, #ffe095, #fff39f);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 p {
-  color: #a4798c;
+  color: #b46e8d;
 }
 .container {
   width: 90%;
@@ -23,7 +39,7 @@ p {
 h1,
 h2,
 h3 {
-  color: #a4798c;
+  color: #b46e8d;
   letter-spacing: -0.5px;
   margin-bottom: 20px;
 }
@@ -65,12 +81,29 @@ a.hover {
   padding: 10px;
 }
 .header {
-  background: #ffd56f;
   position: relative;
   overflow: hidden;
   color: white;
   text-align: center;
-  padding: 10px 20px;
+  padding: 60px 20px 30px;
+}
+
+.logo {
+  height: 470px !important; /* 375px * 1.25 = ~470px */
+  margin: 30px auto 0 !important;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
 }
 
 .header .container {
@@ -108,7 +141,6 @@ a.hover {
 .about {
   padding: 0;
   text-align: center;
-  background-color: #ffd56f;
 }
 .about .container {
   background-color: white;
@@ -117,6 +149,7 @@ a.hover {
   max-width: 800px;
   margin: 0 auto;
   width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .about h2 {
   font-size: 32px;
@@ -130,7 +163,6 @@ a.hover {
 .past-events {
   padding: 10px 10px;
   text-align: center;
-  background-color: #ffd56f;
 }
 .past-events h2 {
   font-size: 32px;
@@ -195,7 +227,6 @@ a.hover {
 .workshops {
   padding: 20px 50px;
   text-align: center;
-  background-color: #ffd56f;
 }
 .workshops h2 {
   font-size: 32px;
@@ -224,10 +255,8 @@ a.hover {
   text-decoration: underline;
 }
 .faq {
-  background-color: #ffd56f;
   padding: 10px 20px;
   text-align: center;
-  color: aliceblue;
   overflow-x: hidden;
 }
 .faq h2 {
@@ -264,7 +293,7 @@ a.hover {
 }
 
 .hcSubtitle {
-  margin-top: 0;
+  margin-top: -20px;
 }
 
 .event a {
