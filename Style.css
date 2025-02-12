@@ -1,6 +1,6 @@
 @font-face {
   font-family: "FuturaHand", sans-serif;
-  src: url("FuturaHand.ttf");
+  src: url("FuturaHand.woff2");
 }
 
 body {
@@ -373,11 +373,18 @@ section {
   }
 
   .hack-club-flag {
-    width: 25%;
+    width: 140px !important;
   }
 
   .language-switcher {
-    display: none;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+  }
+
+  .lang-btn {
+    font-size: 14px;
+    padding: 3px 8px;
   }
 
   .logo {
@@ -390,16 +397,19 @@ section {
   position: absolute;
   top: 0;
   left: 4px;
-  width: 14%;
+  width: 230px;
 }
 
 .language-switcher {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 8px 15px;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
   border-radius: 10px;
   color: #a4798c;
+  z-index: 100;
+  display: flex;
+  align-items: center;
 }
 
 .lang-btn {
